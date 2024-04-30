@@ -1,0 +1,14 @@
+<div class="container mt-4">
+  <h2>Clientes</h2>
+  <!-- Aquí puedes agregar un formulario para agregar nuevos clientes -->
+  <button class="btn btn-primary">Agregar Cliente</button>
+  <hr>
+  <!-- Aquí se listarán los clientes -->
+  <div class="row">
+    <div class="col">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let cliente of clientes">{{ cliente.nombre }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

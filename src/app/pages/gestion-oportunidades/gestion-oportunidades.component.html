@@ -1,0 +1,15 @@
+<div class="container mt-4">
+  <h2>Oportunidades de Negocio</h2>
+  <!-- Aquí puedes agregar un formulario para agregar nuevas oportunidades -->
+  <button class="btn btn-primary">Agregar Oportunidad</button>
+  <hr>
+  <!-- Aquí se listarán las oportunidades -->
+  <div class="row">
+    <div class="col">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let oportunidad of oportunidades">{{ oportunidad.nombre }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
